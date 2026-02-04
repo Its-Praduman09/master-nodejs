@@ -3,11 +3,9 @@ const app = express();
 const fakeData = require("./MOCK_DATA.json");
 const PORT = 4000;
 
-// app.get("/", (req, res) => {
-//   // res.send("Welcome Software Engineer.");
-//   const allData = fakeData;
-//   res.json(allData);
-// });
+app.get("/", (req, res) => {
+  res.send("Welcome Software Engineer.");
+});
 
 // i want to get all data  present in fakeData.json file
 app.get("/users", (req, res) => {
